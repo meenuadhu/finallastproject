@@ -1,0 +1,961 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,700&display=swap');
+
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*===== Variable Define =====*/
+:root {
+  --primary-color: #96b1a8;
+  --third-color: #21333e;
+  --four-color: #b7b4ad;
+  --five-color:  #93cfbf;
+  --six-color: #eeebe4;
+  --gray-color: #e2e2e2;
+  --white-color: #fff;
+  --primary-font: 'Montserrat', sans-serif;
+  --secondry-font: 'Poppins', sans-serif;
+}
+
+.gradient {
+  background: rgb(155, 184, 228);
+  background: linear-gradient(
+    135deg,
+    rgb(43, 126, 115) 0%,
+    rgb(8, 129, 228) 100%
+  );
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--secondry-font);
+  font-size: 100%;
+  font-weight: 300;
+  overflow-x: hidden;
+  margin-top: 3rem;
+  
+}
+
+
+/*
+==========================================
+   Custom CSS Design
+==========================================
+*/
+section{
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: rgb(10, 30, 46);
+  text-transform: capitalize;
+}
+
+h1 span {
+  color: var(--five-color);
+}
+
+h2 {
+  font-weight: 700;
+  padding: 1rem 0;
+  font-size: 2rem;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: rgb(25, 30, 53);
+}
+h3 {
+  font-weight: 500;
+  padding: 1rem 0;
+  font-size: 2rem;
+  line-height: 1;
+  text-transform: capitalize;
+  color: rgb(10, 66, 88);
+}
+h4 {
+  font-weight: 400;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color:rgb(73, 70, 70);
+}
+
+h5 {
+  color:rgb(68, 67, 70) ;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: black;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.main-btn {
+  position: relative;
+  z-index: 2;
+  padding: 0.625rem 1.563rem;
+  background-color: var(--six-color);
+  border-radius: 0.25rem;
+  border: 0.063rem solid;
+  border-color: var(--six-color);
+  color: var(--third-color);
+  font-weight: 500;
+  -webkit-transition: all .4s ease-out 0s;
+  -o-transition: all .4s ease-out 0s;
+  -moz-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+}
+
+.main-btn:hover {
+  background-color: var(--five-color);
+  color: var(--white-color);
+  border-color: var(--five-color);
+
+}
+
+.heading h5{
+  color: var(--five-color);
+}
+
+
+/*
+==========================================
+  Navbar Design
+==========================================
+*/
+
+.navbar{
+  top: 0;
+ left: 0;
+  right: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  
+ 
+}
+.navbar .navbar-brand img{
+  
+  max-width: 55px;
+  max-height: 55px;
+}
+
+.navbar-brand {
+font-size: 24px;
+text-transform: uppercase;
+font-weight: 900;
+color: rgb(10, 68, 116);
+}
+
+.navbar ul li a {
+color: rgb(10, 68, 116);
+font-size: 18px;
+margin: auto 10px;
+font-weight: bold;
+}
+.navbar ul li a:hover {
+color: #3a3c5f;
+}
+
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*
+==========================================
+   Top Section Design
+==========================================
+*/
+.top-wrapper{
+  background-image:url('https://iprsrg.com/wp-content/uploads/2019/08/Background-Images-For-Websites-011.jpg');
+  width:100%;
+  height:100%;
+  background-size: cover;
+  background-position: center center;
+  opacity:1;
+  overflow: hidden;
+}
+.top-wrapper .left-wrapper{
+  padding-top:7.25rem;
+}
+.top-wrapper .left-wrapper h1{
+  width:79%;
+}
+.top-wrapper .right-wrapper{
+  padding-top:5rem;
+}
+.top-wrapper .right-wrapper img{
+  width:20rem;
+  height:auto;
+}
+
+ /*
+==========================================
+  about Section Design
+==========================================
+*/
+.ab-wrapper{
+  padding:5rem 0;
+  
+}
+.ab-about .about-img::before{
+  position:absolute;
+  content:'';
+  top:0;
+  left:0;
+  width:1.5rem;
+  height:27.5rem;
+  background:var(--five-color);
+}
+.ab-about .about-img{
+  position: relative;
+  width:100%;
+  height:auto;
+  padding-left:4rem;
+}
+.ab-about .right-wrapper{
+  padding-left:4rem;
+}
+.ab-about .right-wrapper h5{
+  color:var(--primary-color);
+}
+.ab-about .right-wrapper p{
+  color:var(--third-color);
+}
+.ab-about .right-wrapper .main-btn{
+  color:var(--white-color);
+  background:var(--five-color);
+  border-color: var(--five-color);
+}
+.ab-about .right-wrapper .main-btn:hover{
+  color:var(--white-color);
+  background-color: var(--primary-color);
+  border-color:var(--primary-color);
+}
+
+/*
+==========================================
+  about us key focus Section Design
+==========================================
+*/
+.ab-approach{
+  background-color:var(--six-color);
+}
+.ab-approach-cards{
+  padding-top:3.125rem;
+ 
+}
+.ab-approach-cards .card{
+  display:inline-block;
+  position:relative;
+ min-height:350px;
+  min-width:230px;
+ 
+  margin:1.875rem 0;
+  border-radius: 0.375rem;
+  background:var(--white-color);
+  border:none;
+  box-shadow: -0.2349rem 1.6711rem 2.6875rem 0 rgb(42 57 63 / 15%);
+  transition:all .3s ease;
+} 
+.ab-approach-cards .card:hover{
+  -webkit-transform:translateY(-1.25rem);
+  transform:translateY(-1.25rem);
+ box-shadow:0rem 0rem 2.4375rem 0.125 rgba(236,236,236,1);
+  -o-box-shadow:0rem 0rem 2.4375rem 0.125 rgba(236,236,236,1);
+}
+.ab-approach-cards .card .card-image{
+ 
+  position:relative;
+  overflow:hidden;
+ height: 200px;
+ width: 220px;
+  margin-left:0.9375rem;
+  margin-right:0.9375rem;
+  margin-top:-1.875rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 0.5625rem 1.875rem -0.625rem rgba(221,218,218,0.5);
+}
+.ab-approach-cards .card .content{
+  padding:0.9375rem 1rem;
+  text-align: center;
+}
+.ab-approach-cards .card-description{
+  color:var(--third-color);
+  text-align: center;
+}
+
+
+   /*--------------------------------------------------------------
+  # about us Partners
+  --------------------------------------------------------------*/
+
+
+.partners h2{
+  padding: 3rem;
+  font-weight: 700;
+
+}
+
+  .partners img{
+    transition: all .3s ease;
+   padding: 25px;
+
+  
+}
+.partners img:hover{
+    box-shadow: 0 0 10px 1px #eef3ef;
+    
+}
+
+.partners h4{
+  font-weight: 500;
+ font-size: 22px;
+  color:rgb(7, 10, 58);
+}
+
+
+/*--------------------------------------------------------------
+  # about us Team
+  --------------------------------------------------------------*/
+.team {
+  background: #e8cbc0;
+  background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4);
+  background: linear-gradient(to right, #e8cbc0, #636fa4);
+  min-height: 100vh;
+}
+
+.team-card{
+  min-height: 300px;
+}
+
+
+
+.team-card button {
+  
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:8px;
+  background:  #556092;
+  color: rgb(216, 227, 230);
+  border-radius: 15px;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.team-card button:hover {
+  background: #ddd;
+  text-decoration: none;
+  color: rgb(42, 41, 54);
+}
+
+
+/*
+
+==========================================
+   Events Design
+==========================================
+*/
+.event-main-program {
+  background-image: linear-gradient(rgba(190, 207, 245, 0.9),white), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
+  background-size: cover;
+}
+
+.event-end-program {
+  background-image: linear-gradient(white,rgba(190, 207, 245, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
+  background-size: cover;
+}
+
+
+
+.event-serviceBox{
+  text-align:center;
+  background:hsl(0, 0%, 98%);
+  border:1px solid hsl(0, 0%, 93%);
+  padding:20px;
+  text-align:center;
+  min-height:370px;
+}
+
+.event-serviceBox:hover{
+  box-shadow:0rem 0rem 2.4375rem 0.125 rgba(236,236,236,1);
+  -o-box-shadow:0rem 0rem 2.4375rem 0.125 rgba(236,236,236,1);
+}
+
+.event-serviceBox h3{
+  color: hsl(207, 15%, 28%);
+  font-size: 15px;
+  text-transform: uppercase;
+  margin:0;
+}
+.event-serviceBox .service-icon i{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background-color: hsl(207, 15%, 28%);
+  color: hsl(0, 0%, 100%);
+  font-size:40px;
+  line-height:100px;
+  margin:30px 0;
+  transition:all 0.3s ease-in-out 0.3s;
+}
+.event-serviceBox:hover .service-icon i{
+  transform: rotate(360deg);
+}
+.event-serviceBox .service-content p{
+  color:hsl(0, 0%, 53%);
+  font-size:13px;
+}
+.event-serviceBox .service-content a{
+  background:hsl(187, 82%, 24%);
+  box-shadow: 0 1px 0 hsla(0, 0%, 100%, 0.3) inset, 0 1px 3px hsla(0, 0%, 0%, 0.1);
+  border-color:transparent;
+  color:#fff;
+  font-size:13px;
+  font-weight:bold;
+  margin:0 0 -55px;
+  padding: 10px 25px;
+}
+.event-serviceBox .service-content a:hover{
+  background:hsl(207, 15%, 28%);
+  text-decoration:none;
+  border-color:transparent;
+}
+@media only screen and (max-width: 990px){
+  .event-serviceBox{
+      margin-bottom: 35px;
+  }
+}
+
+
+
+
+/* 
+*******  ICSET  ******
+                */
+                 .image-effect {
+               background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url(https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=725&q=80);
+                  background-repeat: repeat;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  text-transform: uppercase;
+                  -webkit-font-smoothing: antialiased;
+                  padding-left: 10%;
+                }
+                
+                
+                .slider {
+                  background: #f8f8f8;
+                  background-image: linear-gradient(rgba(39, 88, 100, 0.7), rgba(248, 248, 248, 1)), url("https://i.pinimg.com/originals/49/9a/55/499a55aae0361d603fd00cc76ae6f566.jpg");
+                  background-size: cover;
+                }
+               
+                
+                .welcome-description {
+                 color: rgb(8, 102, 109);
+                 padding-left: 5%;
+                }
+                
+                .main-program {
+                  background-image: linear-gradient(rgba(248, 248, 248, 1), rgba(190, 207, 245, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
+                  background-size: cover;
+                }
+                
+                .main-program i {
+                  font-size: 3rem;
+                }
+                
+                .main-program a {
+                  text-decoration: none;
+                }
+                
+                .main-program .program .program-block{
+                 margin: 20px;
+                 min-height: 150px;
+                 background-color: rgb(67, 116, 117);
+                }
+                
+                .main-program .program .program-block a{
+                color: white;
+                }
+                .main-program .program .program-block:hover {
+                  border: 2px solid #fff;
+                }
+
+                .event-description p{
+                  font-style: italic;
+                }
+       
+/* 
+******* Techathlon ******
+                */
+                .tech-image-effect {
+                  background-image: linear-gradient(rgba(30, 52, 78, 0.5), rgba(236, 82, 66, 0.5)), url(https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=725&q=80);
+                     background-repeat: repeat;
+                     background-clip: text;
+                     -webkit-text-fill-color: transparent;
+                     text-transform: uppercase;
+                     -webkit-font-smoothing: antialiased;
+                     padding-left: 10%;
+                   }
+                   
+                   
+                   .tech-slider {
+                     background: #f8f8f8;
+                     background-image: linear-gradient(rgba(19, 85, 122, 0.7), rgb(241, 235, 235)), url("https://2.bp.blogspot.com/-TSW6G4h09fI/WAipM3OI70I/AAAAAAAAEGY/znpWC2KzS8QdGDjs92Xb1YVim96ZV6mIACLcB/s640/modern-technology.jpg");
+                     background-size: cover;
+                   }
+                  
+                   
+                   .tech-welcome-description {
+                    color: rgb(8, 102, 109);
+                    padding-left: 5%;
+                   }
+                   
+                   .tech-main-program {
+                     background-image: linear-gradient(rgb(241, 235, 235), rgba(221, 219, 219, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
+                     background-size: cover;
+                   }
+                   
+                   .tech-main-program i {
+                     font-size: 3rem;
+                   }
+                   
+                  
+                   
+                   .tech-main-program .program .program-block{
+                    margin: 20px;
+                    min-height: 170px;
+                    background-color: rgb(120, 140, 150);
+                   }
+                   
+                   .tech-main-program .program .program-block a{
+                   color: white;
+                   }
+                   .tech-main-program .program .program-block:hover {
+                     border: 2px solid #fff;
+                   }
+   
+                   .event-description p{
+                     font-style: italic;
+                   }
+
+/* 
+*******  Paper presentation  ******
+                */
+                .paper-image-effect {
+                  background-image: linear-gradient(rgba(16, 80, 59, 0.5), rgba(214, 58, 50, 0.5)), url('https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=725&q=80');
+                     background-repeat: repeat;
+                     background-clip: text;
+                     -webkit-text-fill-color: transparent;
+                     text-transform: uppercase;
+                     -webkit-font-smoothing: antialiased;
+                     padding-left: 10%;
+                   }
+                   
+                   
+                   .paper-slider {
+                     background: #d1cbcb;
+                     background-image: linear-gradient(rgba(22, 45, 66, 0.7), rgb(240, 235, 241)), url("https://www.ingeniousdesign.co.uk/wp-content/uploads/2019/06/Presentation_2.jpg");
+                     background-size: cover;
+                   }
+                  
+                   
+                   .paper-welcome-description {
+                    color: rgb(17, 17, 49);
+                    padding-left: 5%;
+                    
+                   }
+                   
+                   .paper-main-program {
+                     background-image: linear-gradient(rgb(240, 235, 241), rgba(219, 218, 218, 0.63)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
+                     background-size: cover;
+                   }
+                   
+                   .paper-main-program i {
+                     font-size: 3rem;
+                   }
+                   
+                  
+                   
+                   .paper-main-program .program .program-block{
+                    margin: 20px;
+                    min-height: 170px;
+                    background-color: rgb(105, 91, 98);
+                   }
+                   
+                   .paper-main-program .program .program-block a{
+                   color: white;
+                   }
+                   .paper-main-program .program .program-block:hover {
+                     border: 2px solid #fff;
+                   }
+   
+
+/*
+==========================================
+   Footer Section Design
+==========================================
+*/
+ 
+.copyright{
+  background:var(--third-color);
+}
+.copyright p{
+  color:var(--four-color);
+}
+.copyright a{
+  color:var(--five-color);
+}
+
+
+/*=================
+Responsiv Design
+================*/
+
+
+
+@media (max-width:1030px) {
+
+    /* top header */
+    .navbar.top ul li a{
+        font-size: 0.7rem;
+    }
+    .main-btn{
+        position:relative;
+        z-index: 2;
+        padding:0.525rem 1rem;
+        background:var(--primary-color);
+        font-weight: 500;
+        font-size: 0.875rem;
+    } 
+    
+    /* top banner */
+    .top-wrapper .left-wrapper{
+        padding-top:6rem;
+    }
+    .top-wrapper .left-wrapper h1{
+        width:100%;
+    }
+     
+
+    /* about section */
+    .ab-about .about-img::before{
+        height:22.8125rem;
+    }
+    .ab-about .right-wrapper{
+        padding-left:1rem;
+    } 
+
+ /* offerings section */
+ .about .about-img::before{
+  height:22.8125rem;
+}
+.about .right-wrapper{
+  padding-left:1rem;
+} 
+
+    h2{
+        font-size: 2.9rem;
+    }
+
+    /* our approach */
+     
+}
+
+@media (max-width: 991px) {
+
+   
+    /* top top-wrapper */
+    .top-wrapper{
+        text-align: center;
+    }
+    .top-wrapper .right-wrapper img{
+        width:15rem;
+    }
+    h1{
+        font-size: 2.8rem;
+    }
+     
+
+    /* about section */
+    .ab-about .about-img::before{
+        height:30.5rem;
+    }
+
+ /* offerings section */
+    .about .about-img::before{
+      height:30.5rem;
+  }
+     
+
+    /* blog section */
+    .slider-wrapper .common{
+        width:100%;
+    }
+    .slider-wrapper{
+        flex-direction: column-reverse;
+    }
+    .blog-img img{
+        height:25rem;
+    }
+     
+
+
+}
+
+@media (max-width: 767px) {
+
+    /* Custom CSS */
+    .mob-pb-0{
+        padding-bottom:0px !important;
+    }
+    .mob-pt-0{
+        padding-top:0px !important;
+    }
+
+    
+
+    /* top top-wrapper */
+    .top-wrapper .right-wrapper{
+        text-align: center;
+    }
+    .top-wrapper .right-wrapper img{
+        width:50%;
+        margin:auto;
+    }
+
+    /* btn design */
+    .main-btn,
+    .btn-2{
+        min-width:11.25rem !important;
+        padding:0.725rem 2rem !important;
+        font-size: 0.85rem;
+        margin-left:0 !important;
+        margin-top:2rem;
+        text-align: center;
+        align-items: center;
+    }
+     
+
+    /* top banner */
+    .top-wrapper .left-wrapper{
+        padding-top:6.25rem;
+        text-align: center;
+    }
+    h1{
+        font-size: 2.5rem !important;
+    }
+    h2{
+        font-size: 2rem;
+    }
+
+/* about section*/
+    .ab-about .about-img{
+      padding-left:3rem;
+      padding-bottom: 3rem;
+  }
+  .ab-about .about-img::before{
+      height:15.5rem;
+  }
+
+
+    /* offerings section*/
+    .about .about-img{
+        padding-left:3rem;
+        padding-bottom: 3rem;
+    }
+    .about .about-img::before{
+        height:15.5rem;
+    }
+
+   
+}
+
+        
+ /* 
+          offerings section   
+                                  */
+
+.wrapper{
+  padding:5rem 0;
+}
+.about .about-img::before{
+  position:absolute;
+  content:'';
+  top:0;
+  left:0;
+  width:1.5rem;
+  height:27.5rem;
+  background:var(--five-color);
+}
+.about .about-img{
+  position: relative;
+  width:100%;
+  height:auto;
+  padding-left:4rem;
+}
+.about .right-wrapper{
+  padding-left:4rem;
+}
+.about .right-wrapper h5{
+  color:var(--primary-color);
+}
+.about .right-wrapper p{
+  color:var(--third-color);
+}
+.about .right-wrapper .main-btn{
+  color:var(--white-color);
+  background:var(--five-color);
+  border-color: var(--five-color);
+}
+.about .right-wrapper .main-btn:hover{
+  color:var(--white-color);
+  background-color: var(--primary-color);
+  border-color:var(--primary-color);
+}
+
+
+.approach{
+  background-color:var(--six-color);
+}
+.approach-cards{
+  padding-top:3.125rem;
+}
+.approach-cards .card{
+  display:inline-block;
+  position:relative;
+  width:100%;
+  margin:1.875rem 0;
+  border-radius: 0.375rem;
+  background:var(--white-color);
+  border:none;
+  box-shadow: -0.2349rem 1.6711rem 2.6875rem 0 rgb(42 57 63 / 15%);
+  transition:all .3s ease;
+} 
+.approach-cards .card:hover{
+  -webkit-transform:translateY(-1.25rem);
+  transform:translateY(-1.25rem);
+ box-shadow:0rem 0rem 2.4375rem 0.125 rgba(236,236,236,1);
+  -o-box-shadow:0rem 0rem 2.4375rem 0.125 rgba(236,236,236,1);
+}
+.approach-cards .card .card-image{
+  height:50%;
+  position:relative;
+  overflow:hidden;
+ 
+  margin-left:0.9375rem;
+  margin-right:0.9375rem;
+  margin-top:-1.875rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 0.5625rem 1.875rem -0.625rem rgba(221,218,218,0.5);
+}
+.approach-cards .card .content{
+  padding:0.9375rem 1rem;
+  text-align: center;
+}
+.approach-cards .card-description{
+  color:var(--third-color);
+  text-align: center;
+}
+
+.trainers .section-title h2 {
+  font-weight: 700;
+  padding: 1rem 0;
+  font-size: 2rem;
+  margin-top: 70px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: var(--third-color);
+}
+
+.trainers .member {
+  text-align: center;
+ 
+  background: rgb(255, 255, 255);
+  border: 1px solid #ffffff;
+}
+
+.trainers .member img {
+  height: 300px;
+  width: 250px;
+  margin: -1px -1px 30px -1px;
+}
+
+.trainers .member .member-content {
+  padding: 0 20px 30px 20px;
+}
+
+.trainers .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+.trainers .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.trainers .member p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #aaaaaa;
+}
+
+.trainers .member .social {
+  margin-top: 15px;
+}
+
+.trainers .member .social a {
+  color: #7e9486;
+  transition: 0.3s;
+}
+
+
+.trainers .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}

@@ -1,0 +1,47 @@
+<!-- <section class="cooperate">
+   
+
+
+
+    <div class="slant">
+        <h1>Cooperate Course</h1>
+        <img src="../../../assets/img/Accountant-amico.svg">
+        <div class="slantdiv"></div>
+    </div>
+</section> -->
+
+
+<section class="slant">
+    <br><br><br><br><br><br>
+    <div class="content">
+        <h2>Cooperate Courses</h2>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</section>
+<!-- ///////////////////////// -->
+
+
+<section class="coursecards">
+    <div container>
+     <div class="row my-5 cardsrow"  *ngFor="let course of ltt">
+         <div class="col-lg-4 mb-4">
+                <div class="card">
+           <div class="card-image"><img src="{{course.img1}}"></div>
+           <div class="card-text">
+             <h2>{{course.name}}</h2>
+             <p>{{course.about}}</p>
+           </div>
+           <div class="card-stats">
+            
+             <div class="stat border">
+               <a (click)='getDetails(course.name)'>Read more</a></div>
+             </div> 
+            
+           </div>
+   
+               </div>
+         </div>
+ 
+   
+   </div>
+ </section>
