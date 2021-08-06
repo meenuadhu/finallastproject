@@ -106,7 +106,7 @@
 </section>
 <br><br><br><br><br><br><br><br><br><br><br><br>
 <!--///////////////////// courses////////////////////// -->
- <section class="coursecards">
+ <!-- <section class="coursecards">
     <div container>
      <div class="row my-5 cardsrow " *ngFor="let course of data " >
          <div class="col-lg-4 mb-4">
@@ -129,12 +129,22 @@
  
    
    </div>
- </section> 
- <!-- <section class="courses">
+ </section>  -->
+
+
+
+ <div class="container">
+    <div class="row text-center">
+    
+        <div class="col-xl-3 col-sm-6 mb-5 "   *ngFor="let course of data">
     <div class="card transition">
-        <h2 class="transition">Awesome Headline</h2>
-        <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
-        <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div>
-        <div class="card_circle transition"></div>
+        <h2 class="transition">{{course.name}}</h2>
+        <p>{{course.about}}</p>
+        <div class="cta-container transition"> <a (click)='getDetails(course.name)' class="cta" >Read more</a></div>
+        <div class="card_circle transition"><img src="{{course.img1}}"></div>
       </div>
- </section> -->
+ 
+    </div>
+  </div>    
+        
+           
