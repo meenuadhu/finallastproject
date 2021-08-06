@@ -11,18 +11,18 @@
 
 <section class="coursecards">
    <div container>
-    <div class="row my-5 cardsrow"  *ngFor="let data of ltt">
+    <div class="row my-5 cardsrow"  *ngFor="let course of data">
         <div class="col-lg-4 mb-4">
                <div class="card">
-          <div class="card-image"><img src="{{data.img1}}"></div>
+          <div class="card-image"><img src="{{course.img1}}"></div>
           <div class="card-text">
-            <h2>{{data.name}}</h2>
-            <p>{{data.about}}</p>
+            <h2>{{course.name}}</h2>
+            <p>{{course.about}}</p>
           </div>
           <div class="card-stats">
            
             <div class="stat border">
-              <a (click)='getDetails(data.name)'>Read more</a></div>
+              <a (click)='getDetails(course.name)'>Read more</a></div>
             </div> 
            
           </div>

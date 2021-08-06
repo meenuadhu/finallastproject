@@ -92,7 +92,7 @@ export class RetailcourseComponent implements OnInit {
            }
         
       }
-  
+      this.data=[];
       this.data=this.ltt;
 
     });

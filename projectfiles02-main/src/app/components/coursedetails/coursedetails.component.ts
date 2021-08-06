@@ -1,125 +1,90 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CourseServiceService } from 'src/app/services/course-service.service';
+//import * as XLSX from 'xlsx'; 
+import {FormControl, Validators} from '@angular/forms';
+
 @Component({
   selector: 'app-coursedetails',
   templateUrl: './coursedetails.component.html',
   styleUrls: ['./coursedetails.component.css']
 })
 export class CoursedetailsComponent implements OnInit {
+  applicant={
+  
+    name:'',
+    phone:'',
+    email:'',
+    employed:'',
+    qualification:'',
+    messsage:''
+  };
+  _router: any;
+  
+  constructor(private courseservice:CourseServiceService) { }
 
-  ltt=[{name:'',
-  category:'',
-  about:'',
-  objective:'',
-  sponserimage:'',
-  knowledgeParterimage:'',
-  internshipPartnerimage:'',
-  courseDelivery:'',
-  agenda:'',
-  highlights:'',
-  eligibility:'',
-  test:'',
-  courseFee:'',
-  refundPolicy:'',
-  importantDates:'',
-  img1:'',
-  img2:'',
-  questionPaperLink:'',
-  status:''}];
-  mst=[{name:'',
-  category:'',
-  about:'',
-  objective:'',
-  sponserimage:'',
-  knowledgeParterimage:'',
-  internshipPartnerimage:'',
-  courseDelivery:'',
-  agenda:'',
-  highlights:'',
-  eligibility:'',
-  test:'',
-  courseFee:'',
-  refundPolicy:'',
-  importantDates:'',
-  img1:'',
-  img2:'',
-  questionPaperLink:'',
-  status:''}];
-  
-  
-    data=[{
-      name:'',
-      category:'',
-      about:'',
-      objective:'',
-      sponserimage:'',
-      knowledgeParterimage:'',
-      internshipPartnerimage:'',
-      courseDelivery:'',
-      agenda:'',
-      highlights:'',
-      eligibility:'',
-      test:'',
-      courseFee:'',
-      refundPolicy:'',
-      importantDates:'',
-      img1:'',
-      img2:'',
-      questionPaperLink:'',
-      status:''
-    }]
-    constructor(private _courseService:CourseServiceService,private _router:Router) { }
-  
-    ngOnInit(): void {
-  
-  
-      console.log("inside RetailList init");
-      
-  
-     
-    this._courseService.getRetailCourses().subscribe((data:any)=>{
-      this.data=JSON.parse(JSON.stringify(data));
-   this.ltt.length=0;
-   this.mst.length=0;
-      for (var i in this.data) {
-           if(this.data[i].category==='Long-Term Training(LTT)')
-           {
-             this.ltt.push(this.data[i]);
-           }
-           else if(this.data[i].category==='Micro skill Training(MST)'){
-            this.mst.push(this.data[i]);
-           }
-        
-      }
-  
-      this.data=this.ltt;
+  course={
+    name:'',
+    category:'',
+    about:'',
+    objective:'',
+    sponserimage:'',
+    knowledgeParterimage:'',
+    internshipPartnerimage:'',
+    courseDelivery:'',
+    agenda:'',
+    highlights:'',
+    eligibility:'',
+    test:'',
+    courseFee:'',
+    refundPolicy:'',
+    importantDates:'',
+    img1:'',
+    img2:'',
+    questionPaperLink:'',
+    status:''
+  };
+  ngOnInit(): void {
 
-    });
-    }
-  
-  onlttClick(){
-  alert('hi');
-  this.data=this.ltt;
-  
-  }
-  onmstClick(){
-    alert('hi');
-    this.data=this.mst;
-  
-  }
+  let type=  localStorage.getItem("type");
+ let  name=  localStorage.getItem("course_name");
+if(type==="Retail"){
+  this.courseservice.getRetailCoursesDetails(name)
+  .subscribe((data:any)=>{
+    this.course=JSON.parse(JSON.stringify(data));
+  });
+
+}
+
+else if(type==="Institutional")
+{
+  this.courseservice.getInstitutionalCoursesDeatils(name)
+  .subscribe((data:any)=>{
+    this.course=JSON.parse(JSON.stringify(data));
+  });
+
+}
+else{
+  this.courseservice.getCorporateCoursesDeatils(name)
+  .subscribe((data:any)=>{
+    this.course=JSON.parse(JSON.stringify(data));
+  });
+
+}
   
    
-    getDetails(name:any){
-      console.log("inside retailcourselist:"+name);
-      //alert("hello");
-      localStorage.setItem("type","Retail");
-      localStorage.setItem("course_name",name);
-      this._router.navigate(['details']);
-  
+   
+ }
+ addapplicant():void{
 
-    }
-  
-    
+   
+      
+  //alert("Added Successfully");
+ // console.log(this.applicant.name+"....");
+  this.courseservice.retailBrouchreRequest(this.applicant);
+  this._router.navigate(['/admin']);
+}
+
   }
-  
+
+

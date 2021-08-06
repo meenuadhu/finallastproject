@@ -52,7 +52,7 @@ export class CooperatecourseComponent implements OnInit {
     }]
     constructor(private _courseService:CourseServiceService,private _router:Router) { }
   
-    ngOnInit(): void {
+    ngOnInit() {
   
   
       console.log("inside CooperateList init");
@@ -62,14 +62,14 @@ export class CooperatecourseComponent implements OnInit {
     this._courseService. getCorporateCourses().subscribe((data:any)=>{
       this.data=JSON.parse(JSON.stringify(data));
    
-    // alert(data.name);
+     alert(data.name);
   
   
     });
     }
     getDetails(name:any){
-      console.log("inside cooperatecourselist:"+name);
-     // alert("hello");
+      //console.log("inside cooperatecourselist:"+name);
+      alert("hello");
       localStorage.setItem("type","Cooperate");
       localStorage.setItem("course_name",name);
       this._router.navigate(['details'])

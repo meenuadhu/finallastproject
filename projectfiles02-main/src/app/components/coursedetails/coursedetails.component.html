@@ -1,134 +1,215 @@
 
-<section id="features">
-    <div class="title">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5 offset-md-1">
-                    <!-- ////middle features,/////////// -->
-                    <div class="features_middle">
-                        <h2>Retail Courses</h2>
-                        <!-- ///////subtitle///////// -->
-                        <p>
-                            njurhjksxcvbnm,fghjklrtyui
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-5 ">
-                    <!-- feature img -->
-                    <!-- <img src="../../../assets/img/Accountant-amico.svg"> -->
-                </div>
+
+<div class="banner">
+    
+    <img src="../../../assets/img/istockphoto.jpg">
+  <div class="content">
+      <h2>{{course.name}}</h2>
+      <p>{{course.objective}}</p>
+
+  </div>
+</div>
+
+<!-- about -->
+
+<section class="about">
+    <div class="contentBx">
+        <h2 class="heading">About the program</h2>
+        <p class="text">{{course.about}}</p>
+    </div>
+    <div> <img  class="imgBx" src="{{course.img1}}"></div>
+</section>
+
+<!-- angenda and course hl -->
+
+<section class="services">
+    <h2 class="heading">AGENDAs</h2>
+    <p class="text">{{course.agenda}} </p>
+    <div class="container">
+        <div class="serviceBx">
+            <div> 
+                <img src="data:image/png;base64,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">
+                <h2>Highlights</h2>
             </div>
         </div>
     </div>
-    <div class="container-fluid margin_top_up ipad_px-30">
-        <div class="row">
-            <div class="col-sm-12 col-lg-10 offset-lg-1">
-                <div class="row">
-                    <!-- single feature -->
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="single_feature">
-                            <h4><a (click)=' onlttClick()'>Long-Term Training(LTT)</a></h4>
-                            
-                         </div>
-                            <!-- feature icon -->
-                             <div class="feature_icon">
-                                <svg class="svg-inline--fa fa-air-freshener fa-w-12" aria-hidden="true" focusable="false" dataprefix="fas" 
-                                data-icon="air-freshener" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-                                    
-                                <path fill="currentColor" d="M224 160H96C43 160 0 203 0 256V480C0 497.625 14.375 512 32
-                                 512H288C305.625 512 320 497.625 320 480V256C320 203 277 160 224 160ZM160
-                                  416C115.875 416 80 380.125 80 336S115.875 256 160 256S240 291.875 240
-                                   336S204.125 416 160 416ZM224 32C224 14.375 209.625 0 192 0H128C110.375 
-                                   0 96 14.375 96 32V128H224V32ZM381.781 51.578C383 50.969 384 49.359 384 
-                                   48C384 46.625 383 45.031 381.781 44.422L352 32L339.562 2.219C338.969 1 
-                                   337.375 0 336 0S333.031 1 332.406 2.219L320 32L290.219 44.422C289 45.031 
-                                   288 46.625 288 48C288 49.359 289 50.969 290.219 51.578L320 64L332.406
-                                    93.781C333.031 95 334.625 96 336 96S338.969 95 339.562 93.781L352
-                                     64L381.781 51.578ZM448 64L460.406 93.781C461.031 95 462.625 96 464 
-                                     96S466.969 95 467.562 93.781L480 64L509.781 51.578C511 50.969 512
-                                      49.359 512 48C512 46.625 511 45.031 509.781 44.422L480 32L467.562 
-                                      2.219C466.969 1 465.375 0 464 0S461.031 1 460.406 2.219L448 32L418.219 
-                                      44.422C417 45.031 416 46.625 416 48C416 49.359 417 50.969 418.219 51.578L448 
-                                      64ZM480 224L467.562 194.219C466.969 193 465.375 192 464 192S461.031 193 460.406
-                                       194.219L448 224L418.219 236.422C417 237.031 416 238.625 416 240C416 241.359
-                                        417 242.969 418.219 243.578L448 256L460.406 285.781C461.031 287 462.625 288
-                                         464 288S466.969 287 467.562 285.781L480 256L509.781 243.578C511 242.969 512 
-                                         241.359 512 240C512 238.625 511 237.031 509.781 236.422L480 224ZM445.781
-                                          147.578C447 146.969 448 145.359 448 144C448 142.625 447 141.031 445.781
-                                           140.422L416 128L403.562 98.219C402.969 97 401.375 96 400 96S397.031 97
-                                            396.406 98.219L384 128L354.219 140.422C353 141.031 352 142.625 352 144C352
-                                             145.359 353 146.969 354.219 147.578L384 160L396.406 189.781C397.031 19
-                                             1 398.625 192 400 192S402.969 191 403.562 189.781L416 160L445.781
-                                              147.578Z"></path></svg>
-                             </div>
-                        </div>
-                  
-
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="single_feature">
-                            <h4><a (click)='onmstClick()'>Micro Skill Test(MST)</a></h4>
-                          </div>                      
-                                <div class="feature_icon">
-                                <svg class="svg-inline--fa fa-air-freshener fa-w-12" aria-hidden="true" focusable="false" dataprefix="fas" 
-                                data-icon="air-freshener" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-                                    
-                                <path fill="currentColor" d="M224 160H96C43 160 0 203 0 256V480C0 497.625 14.375 512 32
-                                 512H288C305.625 512 320 497.625 320 480V256C320 203 277 160 224 160ZM160
-                                  416C115.875 416 80 380.125 80 336S115.875 256 160 256S240 291.875 240
-                                   336S204.125 416 160 416ZM224 32C224 14.375 209.625 0 192 0H128C110.375 
-                                   0 96 14.375 96 32V128H224V32ZM381.781 51.578C383 50.969 384 49.359 384 
-                                   48C384 46.625 383 45.031 381.781 44.422L352 32L339.562 2.219C338.969 1 
-                                   337.375 0 336 0S333.031 1 332.406 2.219L320 32L290.219 44.422C289 45.031 
-                                   288 46.625 288 48C288 49.359 289 50.969 290.219 51.578L320 64L332.406
-                                    93.781C333.031 95 334.625 96 336 96S338.969 95 339.562 93.781L352
-                                     64L381.781 51.578ZM448 64L460.406 93.781C461.031 95 462.625 96 464 
-                                     96S466.969 95 467.562 93.781L480 64L509.781 51.578C511 50.969 512
-                                      49.359 512 48C512 46.625 511 45.031 509.781 44.422L480 32L467.562 
-                                      2.219C466.969 1 465.375 0 464 0S461.031 1 460.406 2.219L448 32L418.219 
-                                      44.422C417 45.031 416 46.625 416 48C416 49.359 417 50.969 418.219 51.578L448 
-                                      64ZM480 224L467.562 194.219C466.969 193 465.375 192 464 192S461.031 193 460.406
-                                       194.219L448 224L418.219 236.422C417 237.031 416 238.625 416 240C416 241.359
-                                        417 242.969 418.219 243.578L448 256L460.406 285.781C461.031 287 462.625 288
-                                         464 288S466.969 287 467.562 285.781L480 256L509.781 243.578C511 242.969 512 
-                                         241.359 512 240C512 238.625 511 237.031 509.781 236.422L480 224ZM445.781
-                                          147.578C447 146.969 448 145.359 448 144C448 142.625 447 141.031 445.781
-                                           140.422L416 128L403.562 98.219C402.969 97 401.375 96 400 96S397.031 97
-                                            396.406 98.219L384 128L354.219 140.422C353 141.031 352 142.625 352 144C352
-                                             145.359 353 146.969 354.219 147.578L384 160L396.406 189.781C397.031 19
-                                             1 398.625 192 400 192S402.969 191 403.562 189.781L416 160L445.781
-                                              147.578Z"></path></svg>
-
-                                 </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <!-- </div> -->
 </section>
-<br><br>
-<!--///////////////////// courses////////////////////// -->
-<section class="coursecards">
-    <div container>
-     <div class="row my-5 cardsrow " *ngFor="let course of ltt " >
-         <div class="col-lg-4 mb-4">
-                <div class="card">
-           <div class="card-image"></div>
-           <div class="card-text">
-             <h2>{{course.name}}</h2>
-             <p>{{course.about}}</p>
-           </div>
-           <div class="card-stats">
+
+<!-- highlight -->
+<section class="technology">
+    <div class="contentBx">
+        <h2 class="heading">Highlights of the program</h2>
+        <p class="text">{{course.highlights}}</p>
+    </div>
+    <div class="imgBx">
+        <img src="{{course.img2}}">
+    </div>
+</section>
+
+<!-- clients -->
+<section class="client">
+    <h2 class="heading">Our Partners</h2>
+    <p class="text">Colloboration with industry leaders has enabled us to deliver high quality learning experience for our students</p>
+    <div class="imgBx">
+        <img src="{{course.sponserimage}}">
+        <img src="{{course. knowledgeParterimage}}">
+        <img src="{{course.internshipPartnerimage}}">
+        <img src="{{course.courseDelivery}}">
+    </div>
+</section>
+
+<!-- entrance test details -->
+<section class="entrance">
+    <div class="eligibility">
+        <h2 class="heading"> Eligibility</h2> <br><br>
+        <p class="text">
+          {{course.eligibility}}
+            </p>
+    </div>
+      <main>
+        <div class="content">
+          <h2 >Entrance test Details</h2>
+          <br><br>
+          <p class="text1">
             
-             <div class="stat border">
-               <a (click)='getDetails(course.name)'>Read more</a></div>
-             </div> 
-            
-           </div>
-   
-               </div>
-         </div>
- 
-   
-   </div>
- </section>
+            {{course.test}}
+            </p>
+            <h5> SAMPLE QUESTION PAPERS:<a href=" {{course.questionPaperLink}}"></a> Download here</h5>
+        </div>
+      </main>
+      
+      <!-- <div class="one">
+        <div class="two"></div>
+      </div>
+         -->
+</section><br>
+
+<section>
+    <div class="one">
+        <div class="two"></div>
+      </div>
+</section>
+
+
+<section id="info">
+    <div class="row">
+      <div class="card">
+        <h2 class="heading">Course Fees</h2>
+        <p class="text">{{course.courseFee}}
+           </p>
+      </div>
+      <div class="card">
+        <h2 class="heading">Refund Fees</h2>
+        <p class="text">{{course.refundPolicy}}</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about">
+    <div class="contentBx">
+        <!-- <h2 class="heading">  -->
+
+            <div class="wrapper1">
+                <div class="card1">
+                  <h1>
+                    <span class="enclosed">important</span>dates
+                  </h1>
+                </div>
+              </div>
+
+
+
+        <!-- </h2>
+        <p class="text">jhdsyiucugnlfdvredbiujfhscudjhcviu jdh<br><br>nksxdksjfjslkcxm </p> -->
+    </div>
+    <div class="contentBx">
+        <!-- <p class="text"> -->
+            <ul class="text">
+          <li> {{course.importantDates}}   </li>
+
+           </ul>
+        <!-- </p> -->
+    </div>
+</section><br>
+<section class="brochure">
+
+    <div> <h2>DOWNLOAD BROCHURE HERE:</h2></div>
+  <form>
+     <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputEmail3" >
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Phone:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputEmail3" >
+      </div>
+    </div>
+
+
+
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-sm-4 pt-0">Are you employed?</legend>
+        <div class="col-sm-8">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+            <label class="form-check-label" for="gridRadios1">
+             Yes
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">
+             No
+            </label>
+          </div>
+          
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3">
+      </div>
+    </div>
+
+
+
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Password:</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword3" >
+      </div>
+    </div>
+    
+
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Highest Graduation:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3">
+      </div>
+    </div>
+
+
+
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Message:</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword3" >
+      </div>
+    </div>
+    
+    <div class="form-group row">
+      <div class="col-md-12">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </div>
+    </div>
+  </form>
+</section>

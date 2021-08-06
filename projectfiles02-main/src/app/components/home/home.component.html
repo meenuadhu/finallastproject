@@ -197,13 +197,57 @@
          <!-- ////////////////////////////offer section/////////////////////////// -->
     
       
+         <section id="partners" class="partners text-center">
+          <div class="container" data-aos="fade-up">
+            <h2>Patrons</h2>
+           
+            <div data-aos="zoom-in" data-aos-delay="100">
+              <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide *ngFor="let patronsArrays of PatronsArray"> <img src="{{patronsArrays.imgName}}" alt="Patrons"></ng-template>  
+               
+              </owl-carousel-o>
+        
+            </div>
+        
+            
+            
+        
+            
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       
       <!-- //////////PATRONS SECTION////////////// -->
-      <section class="companies" data-aos="fade-up" data-aos-delay="200">
+      <!-- <section class="companies" data-aos="fade-up" data-aos-delay="200">
         <div class="container headings text-center">
           <h1 class="text-center font-weight-bold">PATRONS</h1><BR>
-          <!-- <p class="text-center">lsjvjjdsvojodfhbhjfdsnjknvjhdfjvjsdnvj</p> -->
-      </div> 
+           <p class="text-center">lsjvjjdsvojodfhbhjfdsnjknvjhdfjvjsdnvj</p> -->
+     <!----</div> 
         <br> <br> 
         <div class="container text-center">
           <div class="row g-5">
@@ -215,13 +259,15 @@
               /></div>
             </div><br><br> <br> 
             <div class="col-md-2 imgp">
-                <div class='crop'> <img class='img'style=" max-width:120px"                src="https://newzznow.com/wp-content/uploads/2021/06/UST_Logo.jpg"
+                <div class='crop'> <img class='img'style=" max-width:120px"         
+                         src="https://newzznow.com/wp-content/uploads/2021/06/UST_Logo.jpg"
                 alt="Company logo"
                 class="img-fluid"
               /></div>
             </div>
             <div class="col-md-2 imgp" >
-                <div class='crop'> <img class='img'style=" max-width:120px"                src="https://images.moneycontrol.com/static-mcnews/2019/05/Tata_Consultancy_Services-770x433.jpg?impolicy=website&width=770&height=431"
+                <div class='crop'> <img class='img'style=" max-width:120px"               
+                   src="https://images.moneycontrol.com/static-mcnews/2019/05/Tata_Consultancy_Services-770x433.jpg?impolicy=website&width=770&height=431"
                 alt="Company logo"
                 class="img-fluid"
               /></div>
@@ -245,12 +291,12 @@
                 alt="Company logo"
                 class="img-fluid"
               /></div></div>
-            <!-- </div> -->
+            </div> -->
             
-          </div>
+          <!-- </div>
         </div>
         <br> <br> 
-      </section>
+      </section> --> 
       <!-- ///////////END//////////////////////// -->
       
       <!-- ////////////////////IMPORTANT COURSES//////////////// --><br> <br> <br> <br> 
@@ -306,130 +352,126 @@
        <!-- ////////////////////IMPORTANT COURSES ENDS//////////////// -->
     
     
-       <br> <br> <br> <br> <br> <br> 
+       <br> 
       
       <!-- ///////////////TESTIMONIALS///////////////////// -->
-    <section>
-    
-       
-      <div class="container headings text-center">
-        <h1 class="text-center font-weight-bold">TESTIMONIALS</h1>
-        <!-- <p class="text-center">lsjvjjdsvojodfhbhjfdsnjknvjhdfjvjsdnvj</p> -->
-    </div> <br><br>
-    
-    <div class="container">
-      <div class="row">
-          <div class="col-md-offset-1 col-md-12">
-              <!-- <div id="testimonial-slider" class="owl-carousel"> -->
-    
-    
-    
-      <owl-carousel-o [options]=" testimonialSlider">
-        <ng-template carouselSlide>
-    
-          <div class="testimonial-image">
-            <img src="../../../assets/img/dr.sudhabalagopalan.jpg" alt="testimonial">
-          </div>
-    
-          <div class="testimonial-content">
-            <h2> Dr.Sudha Balagopalan</h2>
-            <h3>Manager</h3>
-            <p>"It was our proud privilege to be associated with ICTAK for the last full year. While it was a great 
-              learning experience for our institution, we were also impressed by the dedication and professionalism,
-               each opportunity, be it training sessions or placement initiatives ICTAK brought to the students and 
-               staff. The high quality delivery and reach ICTAK gave our institution is viewed with gratitude and
-                honor. Personally, every meeting that I attended left me enriched 
-              and growing and I take this opportunity for extending our warm wishes and many many
-               glorious years together"
-    
-            </p>
-           
-          </div>
-        </ng-template>  
-    <!-- ////////////////////////////////////////////////////// -->
-    
-    <ng-template carouselSlide>
-    
-      <div class="testimonial-image">
-        <img src="../../../assets/img/dr.syamprakash.jpg" alt="testimonial">
-      </div>
-    
-      <div class="testimonial-content">
-        <h2> Dr. Syam Prakash</h2>
-        <h3>Principal, GCE Kannur</h3>
-        <p>"Extremely happy to see that GCE Kannur is the first Government College signed MoU with 
-          ICT Academy and derived total benefit to the entire students and faculty by conducting largest
-           number of programmes. We were looking for well-designed programmes for our Institute and at
-            that point of time ICT Academy was established and it helped us to make our expectations to reality. 
-          Hope that ICT Academy will explore all possible avenues for the fullest satisfaction of higher
-           education sector."
-    
-        </p>
-       
-      </div>
-    </ng-template> 
-    
-       
-        
-        <!-- /////////////////////////////////////////////////// -->
-        
-        <ng-template carouselSlide>
-    
-          <div class="testimonial-image">
-            <img src="../../../assets/img/mr.naseef.jpg" alt="testimonial">
-          </div>
-    
-          <div class="testimonial-content">
-            <h2>Mr.Naseef</h2>
-            <!-- <h3>Manager</h3> -->
-            <p>Firstly, Special thanks to ICT ACADEMY-CALICUT Branch. This course teach me a lot of things to
-              becoming Fullstack  developer. Important topic is covered in this course as both server-side and 
-              client-side ,Node js, Express js, MongoDb, Angular js, HTML, CSS, Python, etc. They really teach 
-              what do we need to know and their application on real world problem. There are projects that 
-              student can learn to improve their skill. This is the best course to learn Fullstack development , 
-              great teacher. Every step of code is explained, and even better thing is that all those explanations 
-    
-            </p>
-           
-          </div>
-        </ng-template> 
-        <!-- ////////////////////////////////////////////// -->
-        
-    
-        <ng-template carouselSlide>
-    
-          <div class="testimonial-image">
-            <img src="../../../assets/img/dr.ksdivakarannair - Copy.jpg" alt="testimonial">
-          </div>
-    
-          <div class="testimonial-content text-center">
-            <h2>Dr. K.S Divakaran Nair</h2>
-            <h3>Director, SNGIST</h3>
-            <p>"ICT Academy of Kerala, professionally managed by a team of committed leaders offers various 
-              trainings and development programmes for students and teachers for engineering colleges. ICT Academy 
-              of Kerala has influenced thousands of students and teachers in the state and made them realize the 
-              significance of employability. ICTAK has made the member colleges proud of
-              showcase their achievements. We at SNGIST, North Paravur wish ICTAK a very eventful and successful 
-              year ahead."
-    
-            </p>
-           
-          </div>
-        </ng-template> 
-    
-    
-      </owl-carousel-o>
-    
-    </div>
-    </div>
-    </div>
-    <!-- </div> -->
-    
-    </section> 
-    
+  
      
         
-    
+      <section id="partners" class="partners text-center">
+        <div class="demo" style="background: #fff;">
+          <div class="container">
+        <div class="container" data-aos="fade-up">
+          <h2>Testimonials</h2>
+          <br><br>
+          <div class="row">
+            <div class="col-md-12">
+      
+          <div data-aos="zoom-in" data-aos-delay="100">
+            <owl-carousel-o [options]="testimonialSlider">
+              <!-- //////////////////////////////////////////////// -->
+              <ng-template carouselSlide >
+      
+                <div class="testimonial">
+                  <p class="description">
+                   " Firstly, Special thanks to ICT ACADEMY-CALICUT Branch. This course teach me a lot of things to
+                    becoming Fullstack  developer. Important topic is covered in this course as both server-side and 
+                    client-side ,Node js, Express js, MongoDb, Angular js, HTML, CSS, Python, etc. They really teach 
+                    what do we need to know and their application on real world problem. There are projects that 
+                    student can learn to improve their skill. This is the best course to learn Fullstack development , 
+                    great teacher. Every step of code is explained, and even better thing is that all those explanations ."
+                  </p>                  <div class="pic">
+                      <img src="../../../assets/img/mr.naseef.jpg" alt=""/>
+                  </div>
+                  <div class="testimonial-prof">
+                      <h4>Mr. Naseef</h4>
+                      <small>Web Developer</small>
+                  </div>
+              </div>
+      
+      
+              </ng-template>  
+             <!-- /////////////////////////////////////////////////// -->
+             <ng-template carouselSlide >
+      
+              <div class="testimonial">
+                <p class="description">
+                "ICT Academy of Kerala, professionally managed by a team of committed leaders offers various 
+                    trainings and development programmes for students and teachers for engineering colleges. ICT Academy 
+                    of Kerala has influenced thousands of students and teachers in the state and made them realize the 
+                    significance of employability. ICTAK has made the member colleges proud of
+                    showcase their achievements. We at SNGIST, North Paravur wish ICTAK a very eventful and successful 
+                    year ahead."
+                </p>
+                <div class="pic">
+                    <img src="../../../assets/img/dr.ksdivakarannair - Copy.jpg" alt=""/>
+                </div>
+                <div class="testimonial-prof">
+                    <h4>Dr. K.S Divakaran Nair</h4>
+                    <small> Director, SNGIST</small>
+                </div>
+            </div>
+      
+      
+            </ng-template>  
+            <!-- //////////////////////////////////////////////////
+             -->
+             <ng-template carouselSlide >
+      
+              <div class="testimonial">
+                <p class="description">
+                "Extremely happy to see that GCE Kannur is the first Government College signed MoU with 
+                    ICT Academy and derived total benefit to the entire students and faculty by conducting largest
+                     number of programmes. We were looking for well-designed programmes for our Institute and at
+                      that point of time ICT Academy was established and it helped us to make our expectations to reality. 
+                    Hope that ICT Academy will explore all possible avenues for the fullest satisfaction of higher
+                     education sector."
+                </p>
+                <div class="pic">
+                    <img src="../../../assets/img/dr.syamprakash.jpg" alt=""/>
+                </div>
+                <div class="testimonial-prof">
+                    <h4>Dr. Syam Prakash</h4>
+                    <small>Principal, GCE Kannur</small>
+                </div>
+            </div>
+      
+      
+      
+            </ng-template>  
+            <!-- //////////////////////////////////// -->
+            <ng-template carouselSlide >
+      
+              <div class="testimonial">
+                <p class="description">
+                 "It was our proud privilege to be associated with ICTAK for the last full year. While it was a great 
+                    learning experience for our institution, we were also impressed by the dedication and professionalism,
+                     each opportunity, be it training sessions or placement initiatives ICTAK brought to the students and 
+                     staff. The high quality delivery and reach ICTAK gave our institution is viewed with gratitude and
+                      honor. Personally, every meeting that I attended left me enriched 
+                    and growing and I take this opportunity for extending our warm wishes and many many
+                     glorious years together" </p>
+                <div class="pic">
+                    <img src="../../../assets/img/dr.sudhabalagopalan.jpg" alt=""/>
+                </div>
+                <div class="testimonial-prof">
+                    <h4> Dr.Sudha Balagopalan</h4>
+                    <small>Manager</small>
+                </div>
+            </div>
+      
+      
+      
+            </ng-template>  
+            <!-- ///////////////////////////////////////// -->
+            </owl-carousel-o>
+      
+          </div>
+      
+        </div></div></div>
+        </div>
+        </div>
+        </section>
     
      
        
@@ -500,3 +542,9 @@
           </div>
         </div>
       </section>
+
+
+
+    
+     
+
