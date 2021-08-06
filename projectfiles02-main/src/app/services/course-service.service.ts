@@ -6,6 +6,12 @@ import { ifStmt } from '@angular/compiler/src/output/output_ast';
   providedIn: 'root'
 })
 export class CourseServiceService {
+  institutionalBrouchreRequest(applicant: { name: string; phone: string; email: string; employed: string; qualification: string; messsage: string; }) {
+    throw new Error('Method not implemented.');
+  }
+  corporateBrouchreRequest(applicant: { name: string; phone: string; email: string; employed: string; qualification: string; messsage: string; }) {
+    throw new Error('Method not implemented.');
+  }
 
 
   constructor(private http:HttpClient) { }
