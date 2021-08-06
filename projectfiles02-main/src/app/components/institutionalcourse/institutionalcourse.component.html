@@ -2,7 +2,7 @@
 <section class="slant">
     <br><br><br><br><br><br>
     <div class="content">
-        <h2>Institutional Courses</h2>
+        <h1>Institutional Courses</h1>
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </section>
@@ -39,12 +39,12 @@
   <div class="container">
     <div class="row text-center">
     
-        <div class="col-xl-3 col-sm-6 mb-5 "   *ngFor="let course of data">
+        <div class="col-xl-4 col-sm-6 mb-5 "   *ngFor="let course of data">
     <div class="card transition">
         <h2 class="transition">{{course.name}}</h2>
         <p>{{course.about}}</p>
         <div class="cta-container transition"> <a (click)='getDetails(course.name)' class="cta" >Read more</a></div>
-        <div class="card_circle transition"><img src="{{course.img1}}"></div>
+        <div><img     class="card_circle transition" src="{{course.img1}}"></div>
       </div>
  
     </div>

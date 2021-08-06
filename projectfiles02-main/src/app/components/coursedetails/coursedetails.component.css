@@ -192,6 +192,9 @@ opacity: 1;
         letter-spacing:1px;
     }
 
+    .text11{
+      color: white;
+    }
 
     /* html {
         font-family: sans-serif;
@@ -397,4 +400,8 @@ body {
       linear-gradient(to bottom right, #3C4BBD 15%, transparent),
       radial-gradient(circle at 100% 0%, rgba(255,255,255,.2) 10%, transparent 20%) center center / 15px 15px,
       linear-gradient(to bottom right, #3C4BBD, #57ADD8);
+  }
+  .form-control{
+    width: 350px;
+    height: 12px;
   }

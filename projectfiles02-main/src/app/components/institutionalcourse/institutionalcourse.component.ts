@@ -63,14 +63,14 @@ export class InstitutionalcourseComponent implements OnInit {
     this._courseService.getInstitutionalCourses().subscribe((data:any)=>{
       this.data=JSON.parse(JSON.stringify(data));
    
-     alert(data.name);
+    // alert(data.name);
   
   
     });
     }
     getDetails(name:any){
       console.log("inside instituionalcourselist:"+name);
-      alert("hello");
+      //alert("hello");
       localStorage.setItem("type","Institutional");
       localStorage.setItem("course_name",name);
       this._router.navigate(['details'])

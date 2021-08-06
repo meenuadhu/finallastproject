@@ -99,12 +99,12 @@ export class RetailcourseComponent implements OnInit {
     }
   
   onlttClick(){
-  alert('hi');
+ // alert('hi');
   this.data=this.ltt;
   
   }
   onmstClick(){
-    alert('hi');
+   // alert('hi');
     this.data=this.mst;
   
   }
